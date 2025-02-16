@@ -1,7 +1,10 @@
-export default function Home() {
+'use client';
+
+import NoSSRWrapper from '@/app/NoSSRWrapper';
+import Home from '@/app/Home';
+
+export default function Page() {
   return (
-    <main>
-      <div>Hello world!</div>
-    </main>
+      <NoSSRWrapper><Home /></NoSSRWrapper>
   );
 }
